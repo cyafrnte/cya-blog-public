@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "first_file",
+    "file": "posts/first_file.html",
+    "title": "first_file",
+    "excerpt": "",
+    "date": "2026-07-14T14:25:49Z",
+    "hash": "01ba4719c8"
+  },
+  {
+    "slug": "nota_azucar",
+    "file": "posts/nota_azucar.html",
+    "title": "El azúcar le ganó a la inflación general en 2026 — ComparaYAhorrá",
+    "excerpt": "El azúcar le ganó a la inflación general en 2026 — ComparaYAhorrá :root { --violeta: #cb6ce6; --menta: #8cdfc5; --violeta-claro:#bb8edd; --negro: #1a1a2e; --texto: #2d2d2d; --texto-suave: #666680; --f…",
+    "date": "2026-07-14T14:25:49Z",
+    "hash": "957827e02e"
+  },
+  {
+    "slug": "prueba",
+    "file": "posts/prueba.html",
+    "title": "Primer post",
+    "excerpt": "Primer post Primer post contenido de prueba modificado.",
+    "date": "2026-07-14T14:25:49Z",
+    "hash": "0616c627f7"
+  }
+]

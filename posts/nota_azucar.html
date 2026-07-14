@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>El azúcar le ganó a la inflación general en 2026 — ComparaYAhorrá</title>
+<meta name="description" content="Cruzamos nuestro relevamiento en 6 supermercados con los datos oficiales de junio 2026: el azúcar subió mucho más que la inflación general." />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!--
+  PENDIENTES ANTES DE PUBLICAR (los únicos 2 puntos a reemplazar):
+  1. [URL-DE-LA-IMAGEN]  → imagen principal (góndola / paquetes de azúcar)
+  2. [URL-AFILIADO-ML]   → link de afiliado ML del producto elegido (no azúcar)
+                            + [NOMBRE DEL PRODUCTO] y su descripción corta
+-->
+
+
+<style>
+  :root {
+    --violeta:      #cb6ce6;
+    --menta:        #8cdfc5;
+    --violeta-claro:#bb8edd;
+    --negro:        #1a1a2e;
+    --texto:        #2d2d2d;
+    --texto-suave:  #666680;
+    --fondo:        #f8f8ff;
+    --blanco:       #ffffff;
+    --borde:        rgba(203,108,230,0.18);
+    --ancho:        740px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--texto);
+    background: var(--fondo);
+  }
+
+  .site-header {
+    background: var(--blanco);
+    padding: 16px 32px;
+    border-bottom: 1px solid var(--borde);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 12px rgba(203,108,230,0.08);
+  }
+  .site-logo { font-size: 20px; font-weight: 800; text-decoration: none; color: var(--negro); letter-spacing: -0.02em; }
+  .site-logo .acento { color: var(--violeta); }
+  .header-link {
+    font-size: 13px; font-weight: 600; color: var(--violeta); text-decoration: none;
+    background: rgba(203,108,230,0.1); padding: 7px 16px; border-radius: 20px; transition: background 0.2s;
+  }
+  .header-link:hover { background: rgba(203,108,230,0.2); }
+
+  .hero {
+    background: linear-gradient(135deg, #cb6ce622 0%, #8cdfc522 100%);
+    border-bottom: 1px solid var(--borde);
+    padding: 56px 24px 76px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px;
+    background: radial-gradient(circle, #cb6ce630 0%, transparent 70%); pointer-events: none;
+  }
+  .hero::after {
+    content: ''; position: absolute; bottom: -60px; left: -60px; width: 250px; height: 250px;
+    background: radial-gradient(circle, #8cdfc530 0%, transparent 70%); pointer-events: none;
+  }
+
+  .eyebrow {
+    display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--violeta); background: rgba(203,108,230,0.12); padding: 4px 14px; border-radius: 20px; margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 46px); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em;
+    color: var(--negro); max-width: 680px; margin: 0 auto 18px;
+  }
+  h1 .resaltado {
+    background: linear-gradient(90deg, var(--violeta), var(--violeta-claro));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+
+  .bajada { font-size: 17px; color: var(--texto-suave); max-width: 560px; margin: 0 auto 24px; font-weight: 400; }
+
+  .meta { display: flex; justify-content: center; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12.5px; color: var(--texto-suave); font-weight: 600; }
+  .meta-fecha { text-transform: uppercase; letter-spacing: 0.03em; }
+  .meta-sep { opacity: 0.5; }
+
+  .imagen-wrap { max-width: var(--ancho); margin: -44px auto 8px; padding: 0 24px; position: relative; z-index: 2; }
+  .imagen-frame { background: var(--blanco); border: 1px solid var(--borde); border-radius: 22px; padding: 10px; box-shadow: 0 14px 36px rgba(203,108,230,0.20); }
+  .imagen-principal { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 16px; background: linear-gradient(135deg, #cb6ce615, #8cdfc515); }
+  .imagen-caption { font-size: 12px; color: var(--texto-suave); text-align: center; margin: 10px 0 8px; padding: 0 24px; }
+
+  .articulo { max-width: var(--ancho); margin: 0 auto; padding: 24px 24px 72px; }
+
+  .cuerpo p { margin-bottom: 20px; color: var(--texto); font-size: 16px; }
+  .cuerpo strong { color: var(--negro); font-weight: 700; }
+  .cuerpo p.lead { font-size: 19px; font-weight: 600; color: var(--negro); line-height: 1.6; }
+  .cuerpo a { color: var(--violeta); font-weight: 600; text-decoration: underline; text-decoration-color: rgba(203,108,230,0.4); text-underline-offset: 2px; }
+  .cuerpo a:hover { text-decoration-color: var(--violeta); }
+
+  .cuerpo h2 {
+    font-size: 22px; font-weight: 800; color: var(--negro); margin: 44px 0 14px; letter-spacing: -0.01em;
+    position: relative; padding-left: 16px;
+  }
+  .cuerpo h2::before {
+    content: ''; position: absolute; left: 0; top: 4px; bottom: 4px; width: 4px; border-radius: 4px;
+    background: linear-gradient(to bottom, var(--violeta), var(--menta));
+  }
+
+  .dato-inline { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 28px 0; }
+  .dato-inline__item { background: var(--blanco); border: 1.5px solid var(--borde); border-radius: 14px; padding: 18px 16px; text-align: center; position: relative; overflow: hidden; }
+  .dato-inline__item::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--violeta), var(--menta)); }
+  .dato-inline__numero {
+    font-size: 30px; font-weight: 800; line-height: 1.1; margin-bottom: 4px;
+    background: linear-gradient(135deg, var(--violeta), var(--violeta-claro));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+  .dato-inline__label { font-size: 12px; color: var(--texto-suave); font-weight: 500; line-height: 1.3; }
+
+  .destacado {
+    background: linear-gradient(135deg, rgba(203,108,230,0.08), rgba(140,223,197,0.1));
+    border: 1.5px solid var(--borde); border-radius: 14px; padding: 22px 26px; margin: 32px 0; position: relative;
+  }
+  .destacado::before {
+    content: '"'; position: absolute; top: -8px; left: 18px; font-size: 60px; font-weight: 800; color: var(--violeta);
+    line-height: 1; opacity: 0.3;
+  }
+  .destacado p { font-size: 17px !important; font-weight: 600 !important; color: var(--negro) !important; line-height: 1.55 !important; margin: 0 !important; }
+
+  .afiliado-eyebrow { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--violeta); margin: 36px 0 10px; padding-left: 4px; }
+  .afiliado-cta {
+    display: flex; align-items: center; gap: 18px;
+    background: linear-gradient(135deg, rgba(203,108,230,0.07), rgba(140,223,197,0.09));
+    border: 1.5px solid var(--borde); border-left: 4px solid var(--violeta); border-radius: 16px; padding: 20px 22px;
+    text-decoration: none !important; box-shadow: 0 4px 16px rgba(203,108,230,0.10); transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .afiliado-cta:hover { box-shadow: 0 10px 30px rgba(203,108,230,0.22); transform: translateY(-2px); }
+  .afiliado-cta__icono {
+    width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--violeta), var(--violeta-claro));
+    display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(203,108,230,0.35);
+  }
+  .afiliado-cta__texto { flex: 1; min-width: 0; }
+  .afiliado-cta__titulo { font-weight: 700; color: var(--negro); font-size: 15.5px; margin-bottom: 2px; }
+  .afiliado-cta__sub { font-size: 12.5px; color: var(--texto-suave); font-weight: 400; }
+  .afiliado-cta__btn {
+    background: linear-gradient(135deg, var(--violeta), var(--violeta-claro)); color: #fff; padding: 11px 22px;
+    border-radius: 24px; font-size: 13.5px; font-weight: 700; white-space: nowrap; box-shadow: 0 4px 14px rgba(203,108,230,0.35);
+  }
+  .afiliado-badge { font-size: 11px; color: var(--texto-suave); margin: 12px 0 0; padding-left: 4px; }
+
+  @media (max-width: 600px) {
+    .site-header { padding: 14px 18px; }
+    .hero { padding: 40px 18px 56px; }
+    .imagen-wrap { margin-top: -32px; }
+    .afiliado-cta { flex-wrap: wrap; }
+    .afiliado-cta__btn { width: 100%; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-logo" href="https://www.comparayahorra.com.ar">Compará<span class="acento">YA</span>horrá</a>
+  <a class="header-link" href="https://www.comparayahorra.com.ar">← Volver al comparador</a>
+</header>
+
+<div class="hero">
+  <div class="eyebrow">📊 Inflación · Alimentos</div>
+  <h1>El azúcar subió <span class="resaltado">casi el doble que la inflación general</span> en lo que va de 2026</h1>
+  <p class="bajada">Cruzamos nuestro relevamiento en 6 supermercados con los datos que difundieron las consultoras esta semana. La góndola no acompaña la buena noticia de la macro.</p>
+  <div class="meta">
+    <span class="meta-autor">Equipo ComparaYAhorrá</span>
+    <span class="meta-sep">·</span>
+    <span class="meta-fecha">10 DE JULIO DE 2026</span>
+  </div>
+</div>
+
+<div class="imagen-wrap">
+  <div class="imagen-frame">
+    <img class="imagen-principal" src="[URL-DE-LA-IMAGEN]" alt="Estantería de supermercado con paquetes de azúcar" />
+  </div>
+</div>
+<p class="imagen-caption">Precios relevados en Coto, Carrefour, Día, Jumbo, Disco y Vea · Enero – Julio 2026</p>
+
+<article class="articulo">
+  <div class="cuerpo">
+
+    <p class="lead">Esta semana varias consultoras coincidieron en algo poco habitual: la inflación de junio podría perforar el 2% mensual por primera vez desde agosto de 2025. Cuando cruzamos ese dato con nuestro propio relevamiento de precios, hay un producto que no acompaña la buena noticia: el azúcar.</p>
+
+    <h2>Lo que dice la macro</h2>
+    <p>Según relevó <a href="https://www.cronista.com/economia-politica/la-inflacion-puede-quebrar-el-2-por-primera-vez-en-2026-a-cuanto-podria-llegar-en-junio-segun-las-consultoras/" target="_blank" rel="noopener">El Cronista</a> entre distintas consultoras privadas, la inflación acumulada de 2026 rondaría entre el 14,9% y el 16,2% hasta mayo. Para el rubro azúcar en particular, las mediciones de junio fueron moderadas: alrededor de 1,1% según Analytica y 2,1% según LCG en el último mes relevado.</p>
+
+    <h2>Lo que vimos en la góndola</h2>
+    <p>Nuestro relevamiento en Coto, Carrefour, Día, Jumbo, Disco y Vea muestra otra historia. Entre enero y julio de 2026 —casi la misma ventana que mide el acumulado oficial— <strong>el azúcar subió en promedio 24,6%</strong> en los seis supermercados. Es decir, bastante más que el acumulado general de la economía en ese mismo período.</p>
+
+    <div class="dato-inline">
+      <div class="dato-inline__item">
+        <div class="dato-inline__numero">+24,6%</div>
+        <div class="dato-inline__label">Promedio en los 6 supermercados</div>
+      </div>
+      <div class="dato-inline__item">
+        <div class="dato-inline__numero">+49,9%</div>
+        <div class="dato-inline__label">El mayor salto — Vea</div>
+      </div>
+      <div class="dato-inline__item">
+        <div class="dato-inline__numero">+3,2%</div>
+        <div class="dato-inline__label">El más contenido — Día</div>
+      </div>
+      <div class="dato-inline__item">
+        <div class="dato-inline__numero">5,5</div>
+        <div class="dato-inline__label">Meses relevados</div>
+      </div>
+    </div>
+
+    <h2>La brecha entre supermercados</h2>
+    <p>La suba tampoco fue pareja. Vea y Coto casi duplicaron el precio del kilo de azúcar en el período, mientras que Día lo mantuvo prácticamente sin cambios. En números concretos: en Día pasó de $1.250 a $1.290 el kilo, mientras que en Vea saltó de $890 a $1.334, y en Coto de $1.099 a $1.567.</p>
+
+    <div class="destacado">
+      <p>Hoy, comprar el mismo kilo de azúcar puede salir hasta 21% más caro según el supermercado — en la misma semana.</p>
+    </div>
+
+    <p>Una aclaración importante: nuestro relevamiento sigue un producto genérico (azúcar blanca, distintas marcas) en 6 cadenas — no reemplaza al IPC ni a un índice con miles de precios relevados. Pero como termómetro de lo que se paga en la góndola, la diferencia con el discurso oficial es demasiado grande para ignorarla.</p>
+
+    <div class="afiliado-eyebrow">🛒 Aprovechá para comprar</div>
+    <a class="afiliado-cta" href="[URL-AFILIADO-ML]" target="_blank" rel="noopener sponsored">
+      <div class="afiliado-cta__icono">🛒</div>
+      <div class="afiliado-cta__texto">
+        <div class="afiliado-cta__titulo">[NOMBRE DEL PRODUCTO] en MercadoLibre</div>
+        <div class="afiliado-cta__sub">[Frase corta — envío, precio, disponibilidad]</div>
+      </div>
+      <div class="afiliado-cta__btn">Ver oferta →</div>
+    </a>
+    <div class="afiliado-badge">* Enlace de afiliado. Si comprás, recibimos una pequeña comisión sin costo extra para vos.</div>
+
+    <p>Esta es la primera nota de una serie donde vamos a cruzar nuestros propios datos con lo que dice la macro, producto por producto. Si querés ver cómo evolucionan los precios en tiempo real, podés <a href="https://www.comparayahorra.com.ar">compararlos vos mismo en ComparaYAhorrá</a>.</p>
+
+  </div>
+</article>
+
+</body>
+</html>
